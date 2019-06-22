@@ -32570,7 +32570,7 @@ window.check_new_release = _check_new_release.checkNewRelease; // used by GTM to
  *
  */
 var domain_app_ids = { // these domains as supported "production domains"
-    'deriv.sastrade.id': 18664
+    'deriv.app': 16929
 };
 
 var getCurrentProductionDomain = function getCurrentProductionDomain() {
