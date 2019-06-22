@@ -22,7 +22,7 @@ const Login = (() => {
         const signup_device      = LocalStore.get('signup_device') || (isMobile() ? 'mobile' : 'desktop');
         const date_first_contact = LocalStore.get('date_first_contact');
         const marketing_queries  = `&signup_device=${signup_device}${date_first_contact ? `&date_first_contact=${date_first_contact}` : ''}`;
-        const default_binary_url = `https://oauth.binary.com/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}`;
+        const default_binary_url = `https://oauth.binary.me/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}`;
 
         if (server_url && /qa/.test(server_url)) {
             return `https://${server_url}/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}`;
