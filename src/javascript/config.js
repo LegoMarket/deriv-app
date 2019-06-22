@@ -9,7 +9,7 @@
  *
  */
 const domain_app_ids = { // these domains as supported "production domains"
-    'deriv.app': 16929,
+    'deriv.sastrade.id': 18664,
 };
 
 const getCurrentProductionDomain = () => (
@@ -26,7 +26,7 @@ const binary_desktop_app_id = 14473;
 
 const getAppId = () => {
     let app_id = null;
-    const user_app_id   = ''; // you can insert Application ID of your registered application here
+    const user_app_id   = '18664'; // you can insert Application ID of your registered application here
     const config_app_id = window.localStorage.getItem('config.app_id');
     if (config_app_id) {
         app_id = config_app_id;
